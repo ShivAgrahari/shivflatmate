@@ -57,6 +57,7 @@ $result = $conn->query($sql);
 
 $search = $_POST['Search'];
  $l= strlen($search);
+    $i= 0;
  
 if ($result->num_rows > 0) {
 // output data of each row
@@ -66,6 +67,8 @@ while($row = $result->fetch_assoc())
 
     if ((!strcasecmp($search,$row['city']))||($l2==0))
     {
+        $name[$i]= $row["name"];
+         $city[$i]= $row["city"];
 echo "<tr><td>" . $row["name"]. "</td><td>" . $row["city"]. "</td></tr>";
  }
 }
