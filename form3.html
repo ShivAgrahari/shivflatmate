@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>Sharing Form</h2>
+    
+    <form action="backend.php"></form>
+    <div> Name: <input type="text" name="myname"> </div><br>
+    <div>date of birth <input type="date" name="my dob"></div>
+    <div> Gender <input type="checkbox" name="Gender">
+        <label for="Gender"> Male</label> <input type="checkbox" name="Gender"> <label for="Gender"> Female </label>
+        <input type="checkbox" name=" Gender"> <label for="Gender"> others </label>
+    </div>
+
+    <div> mobile no. : <input type="number" name="my number"></div>
+    <div> E-mail: <input type="text" name="my email"></div>
+    <div> city : <input type="text" name="my city"></div>
+    <div> pincode : <input type="number" name="my pincode"></div>
+    <div> state: <input type="text" name="my state"></div>
+    <div> Full Address : <input type="text" name="my Address"></div>
+    <div> Aadhar card no: <input type="number" name="my Aadhar"></div>
+    <h5>Upload documents of your ID PROOF</h5>
+
+    <form action="/action_page.php">
+        <input type="file" name="my documents">
+    </form>
+    <h3>Details about flat</h3>
+    <div>BHK: <input type="number" name="my BHK"></div>
+    <div> Balcony <input type="checkbox" name="balcony">
+        <label for="balcony"> YES </label> <input type="checkbox" name="balcony"> <label for="balcony"> NO </label>
+    </div>
+    <div>Description of flat: <input type="text" name="my flat"></div>
+    <div>No of people for sharing: <input type="number" name="my sharing"></div>
+    <div>Any special Facility: <input type="text" name="my Facility"></div>
+    <div>Any special instruction for sharing person : <input type="text" name="my instruction"></div><br>
+    <h5>Upload images of flat</h5>
+    <form action="/action_page.php">
+        <input type="file" name="my images">
+    </form><br>
+    <div> Rent Price : <input type="number" name="my Price"></div><br>
+
+    <div> <input type="submit" value="submit now"> <br></div>
+</body>
+
+</html>
